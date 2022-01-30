@@ -1,2 +1,2 @@
-# Prerequisite
-## Execute DDL in Postgres:
+## Prerequisite
+#### Execute DDL in Postgres:
