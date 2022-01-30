@@ -69,7 +69,7 @@ Update the configuration value for the following attributes in Constant class(un
 |USM00070398|adjust   |2022-01-30 15:18:06.870384|1942|04   |04 |99  |1758   |5     |     |      |550389|-1315778|3      |1      |0    |-9999|     |35  |     |-9999|     |-9999|-9999|340 |31  |0_1000          |
 +-----------+---------+--------------------------+----+-----+---+----+-------+------+-----+------+------+--------+-------+-------+-----+-----+-----+----+-----+-----+-----+-----+-----+----+----+----------------+
 
-4. GPH_BUCKET_WIDTH is derived for partitioning the data and at the end writes into destination location[/umesh/parquet/GPH_BUCKET_WIDTH=0_1000].
+4. GPH_BUCKET_WIDTH is derived for partitioning the data and at the end writes into destination location [/umesh/parquet/GPH_BUCKET_WIDTH=0_1000].
 ![image](https://user-images.githubusercontent.com/36407457/151718401-a5b280aa-f8b2-4b9c-9b0a-979c4e2443e8.png)
 
 
