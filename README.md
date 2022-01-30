@@ -38,3 +38,8 @@ Update the configuration value for the following attributes in Constant class(un
   val FILE_NAME_CONVENTION ="USM"
   val FILE_EXTENSION ="txt"
 ```
+
+## Data Flow
+
+1. Engine Reads the files from the specified source location and loads one by one. 
+2. While loading into the postgres auto generated row sequence id will be genearted by deafult for each record.![image](https://user-images.githubusercontent.com/36407457/151717121-5bec70b7-24d2-41a8-93ea-3856aca8d32b.png)
