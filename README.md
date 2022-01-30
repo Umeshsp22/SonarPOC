@@ -22,7 +22,6 @@ date_time  timestamp
 Update the configuration value for the following attributes in Constant class(under com.org.adjust.const)
 ```
 //Postgres Connection Details
-//Postgres Connection Details
   val CONN_URL = "jdbc:postgresql://<server>:<port>/<database>"
   val USER_ID = "<username>"
   val PASSWORD = "<password>"
