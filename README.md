@@ -41,9 +41,9 @@ Update the configuration value for the following attributes in Constant class(un
 
 ## Data Flow
 
-1. Engine Reads files from the specified source location and loads one by one into stage with full refresh, eventually taking old files data into history. 
-2. While loading data into the postgres auto generated row sequence id will be genearted for each record.![image](https://user-images.githubusercontent.com/36407457/151717121-5bec70b7-24d2-41a8-93ea-3856aca8d32b.png)
-3. Spark consumes the data from the postgres table, perform the tranformations to map the headers with relavent meansurement data and also derives the attributes from rawdata.
+1. Engine Reads files from the specified source location and loads one by one into stage with full refresh and simultaneously taking old files data into history.
+2. While loading data into the postgres auto generated row sequence id will be generated for each record.![image](https://user-images.githubusercontent.com/36407457/151717121-5bec70b7-24d2-41a8-93ea-3856aca8d32b.png)
+3. Spark consumes the data from the postgres table, performs the transformation to map the headers with relevant measurement data and also derives the attributes from rawdata.
 +-----------+---------+--------------------------+----+-----+---+----+-------+------+-----+------+------+--------+-------+-------+-----+-----+-----+----+-----+-----+-----+-----+-----+----+----+----------------+
 |ID         |createdby|date_time                 |YEAR|MONTH|DAY|HOUR|RELTIME|NUMLEV|P_SRC|NP_SRC|LAT   |LON     |LVLTYP1|LVLTYP2|ETIME|PRESS|PFLAG|GPH |ZFLAG|TEMP |TFLAG|RH   |DPDP |WDIR|WSPD|GPH_BUCKET_WIDTH|
 +-----------+---------+--------------------------+----+-----+---+----+-------+------+-----+------+------+--------+-------+-------+-----+-----+-----+----+-----+-----+-----+-----+-----+----+----+----------------+
