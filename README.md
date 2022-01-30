@@ -17,3 +17,25 @@ createdby varchar,
 date_time  timestamp
 );
 ```
+
+#### Configurations:
+Update the configuration value for the following attributes in Constant class(under com.org.adjust.const)
+```
+//Postgres Connection Details
+//Postgres Connection Details
+  val CONN_URL = "jdbc:postgresql://<server>:<port>/<database>"
+  val USER_ID = "<username>"
+  val PASSWORD = "<password>"
+  val TABLE_NAME = "stage.weather_balloonraw_data"
+  val PSG_DRIVER_NAME = "org.postgresql.Driver"
+
+  //Destination Path
+  val DESTINATION_PATH = "<destination_path>"
+
+  //Source of the file path
+  val FILE_SOURCE_LOCATION ="<source_path>"
+
+  //Files Details
+  val FILE_NAME_CONVENTION ="USM"
+  val FILE_EXTENSION ="txt"
+```
